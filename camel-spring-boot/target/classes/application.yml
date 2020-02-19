@@ -1,8 +1,11 @@
 server:
    port: 8080
+   
 camel:
    springboot:
       name: ServicesRest
+      main-run-controller: true
+   
 management:
    port: 8081
 endpoints:
@@ -12,7 +15,3 @@ endpoints:
 quickstart:
    generateOrderPeriod: 10s
    processOrderPeriod: 30s
-   
-baeldung:
-   api:
-      path: '/camel'

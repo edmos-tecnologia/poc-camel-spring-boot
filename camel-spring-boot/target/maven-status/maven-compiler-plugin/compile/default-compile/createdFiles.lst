@@ -1,2 +1,3 @@
 br\edmos\poc\camel\bean\CamelConfig.class
+br\edmos\poc\camel\routes\MyFirstRoute.class
 br\edmos\poc\camel\CamelSpringBootApplication.class

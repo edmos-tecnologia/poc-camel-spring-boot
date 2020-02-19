@@ -5,44 +5,26 @@
 	<groupId>br.edmos.poc.camel</groupId>
 	<artifactId>camel-spring-boot</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	
+
 	<dependencies>
-	
-		<dependency>
-			<groupId>org.apache.camel</groupId>
-			<artifactId>camel-servlet-starter</artifactId>
-			<version>${camel.version}</version>
-		</dependency>
-	 
-		<dependency>
-			<groupId>org.apache.camel</groupId>
-			<artifactId>camel-jackson-starter</artifactId>
-			<version>${camel.version}</version>
-		</dependency>
-	
-		<dependency>
-			<groupId>org.apache.camel</groupId>
-			<artifactId>camel-swagger-java-starter</artifactId>
-			<version>${camel.version}</version>
-		</dependency>
-		<!-- -->
 		<dependency>
 			<groupId>org.apache.camel</groupId>
 			<artifactId>camel-spring-boot-starter</artifactId>
-			<version>2.25.0</version>
+			<version>3.0.0-RC3</version>
 			<!-- use the same version as your Camel core version -->
 		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-			<version>2.1.12.RELEASE</version>
-		</dependency>
 		
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-zipfile</artifactId>
+			<version>${camel-spring-boot-starter.version}</version>
+			<!-- use the same version as your Camel core version -->
+		</dependency>
 	</dependencies>
-	
+
 	<properties>
 		<camel.version>2.25.0</camel.version>
-		<spring-boot-starter.version>2.2.1.RELEASE</spring-boot-starter.version>
+		<spring-boot-starter.version>2.2.4.RELEASE</spring-boot-starter.version>
+		<camel-spring-boot-starter.version>3.0.0-RC3</camel-spring-boot-starter.version>
 	</properties>
 </project>
